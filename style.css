@@ -47,6 +47,9 @@ body {
     top: 0;
     right: 0;
 }
+button {
+    cursor:pointer;
+}
 #searchContainer input {
     width: 200px;
 }
