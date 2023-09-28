@@ -1,0 +1,110 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-image: url('default.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: "Palatino", "Book Antiqua", serif;
+    
+}
+
+#intro {
+    position: absolute;
+    padding: 15px 25px;
+    position: center;
+    border-radius: 10px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg,orange, rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+#weatherContainer {
+    /* color: black; */
+    box-shadow: black;
+    margin-top: 150px;
+    padding: 100px;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+#searchContainer input[type="text"]{
+    width: 80%;
+    color: black;
+}
+#weatherContainer h1 {
+    margin: 5px;
+    font-size: 42px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#searchContainer {
+    padding: 15px;
+    display: flex;
+    justify-content:space-around;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+}
+#searchContainer input {
+    width: 200px;
+}
+#searchContainer button {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg,orange, rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    color: white;
+    width: 75px;
+}
+.searchControl {
+    box-shadow: 2px 2px 5px black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+@media (max-width: 768px) {
+
+    #searchContainer input,
+    #searchContainer button {
+        /* width: 15vh; */
+        /* height: 15vh; */
+        margin-top: 100px;
+        /* align-items: center; */
+       
+        
+    }
+    #weatherContainer{
+        margin-top: 250px;
+        
+    }
+    body{
+        width: 100%;
+    }
+    
+    
+}
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+#weatherMain div {
+    display: inline-block;
+}
+#weatherDescriptionHeader {
+    font-size: 28px;
+    vertical-align: 50%;
+}
+#temperature {
+    font-size: 38px;
+    vertical-align: 25%;
+}
+.bottom-details {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+}
+hr {
+    margin-bottom: 20px;
+}
